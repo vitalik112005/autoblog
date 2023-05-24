@@ -27,4 +27,13 @@ function get_post_by_id($post_id)
     $post = $result->fetch_assoc();
     return $post;
 }
+
+function get_post_by_category($category_id) {
+    global $conn;
+    $category_id=mysqli_real_escape_string($conn, $category_id);
+    $sql = "SELECT * FROM news WHERE category_id = " .$category_id;
+    $result = mysqli_query($conn, $sql);
+    $posts = mysqli_fetch_all($result, MYSQLI_ASSOC);
+    return $posts;
+}
 ?>
