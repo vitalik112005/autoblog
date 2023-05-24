@@ -36,4 +36,14 @@ function get_post_by_category($category_id) {
     $posts = mysqli_fetch_all($result, MYSQLI_ASSOC);
     return $posts;
 }
+
+function get_category_title ($category_id) {
+    global $conn;
+    $category_id = mysqli_real_escape_string($conn, $category_id);
+    $sql= "SELECT * FROM categories WHERE id = " . $category_id;
+    $result = mysqli_query($conn, $sql);
+    $category = mysqli_fetch_assoc ($result);
+    return $category;
+}
+
 ?>
