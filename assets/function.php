@@ -46,4 +46,11 @@ function get_category_title ($category_id) {
     return $category;
 }
 
+/*Видалення новини*/
+function delete_new ($post_id) {
+    global $conn;
+    $post_id = mysqli_real_escape_string($conn, $post_id);
+    $sql = "DELETE FROM news WHERE id =" .$post_id;
+    $result = mysqli_query($conn, $sql);
+}
 ?>

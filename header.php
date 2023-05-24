@@ -34,7 +34,7 @@
                             <img src="img/search.png" alt="Пошук" width="16" height="16">
                         </span>
                     </div>
-                    <!--                    <button class="btn btn-dark" type="submit">Пошук</button>-->
+<!--                    <button class="btn btn-dark" type="submit">Пошук</button>-->
                 </form>
                 <div class="d-flex">
                     <button class="btn btn-dark me-2" type="button" onclick="window.location.href='login/index.php'">Увійти</button>

@@ -11,7 +11,7 @@ require_once ('header.php');
             ?>
             <h2><?= $category['name']?></h2>
             <hr>
-            <?php foreach ($posts as $post): ?>
+ <?php foreach ($posts as $post): ?>
                 <div class="card mb-4">
                     <img class="card-img-top img-fluid img-size" src="<?=
                     $post['image'] ?>" alt="Card image cap">
@@ -24,7 +24,7 @@ require_once ('header.php');
 btn-primary">Детальніше &rarr;</a>
                     </div>
                 </div>
-            <?php endforeach;?>
+                <?php endforeach;?>
         </div>
     </div>
 </div>

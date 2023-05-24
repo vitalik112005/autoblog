@@ -5,6 +5,7 @@ $post_id = isset($_GET['post_id']) ? $_GET['post_id'] : 0;
 if (!is_numeric($post_id)) exit();
 $post = get_post_by_id($post_id);
 ?>
+
 <div class="container">
     <div class="row">
         <div class="col">
